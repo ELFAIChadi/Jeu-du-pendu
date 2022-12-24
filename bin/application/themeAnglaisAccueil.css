@@ -1,0 +1,7 @@
+.libelleTitre {
+	-fx-text: "whatever";
+}
+
+.button {
+    -fx-background-color: #ffff00;
+}

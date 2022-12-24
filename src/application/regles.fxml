@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="aide" maxHeight="580.0" maxWidth="800.0" minHeight="580.0" minWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="582.0" fitWidth="1033.0" layoutX="-136.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/accueil.jpg" />
+         </image>
+      </ImageView>
+      <GridPane layoutX="21.0" layoutY="15.0" prefHeight="551.0" prefWidth="763.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="91.0" minWidth="10.0" prefWidth="42.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="104.0" minWidth="10.0" prefWidth="104.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="89.0" minWidth="10.0" prefWidth="62.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="403.0" minWidth="4.0" prefWidth="342.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="429.0" minWidth="10.0" prefWidth="71.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="134.0" minWidth="10.0" prefWidth="84.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="92.0" minWidth="10.0" prefWidth="61.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="79.0" minHeight="10.0" prefHeight="67.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="106.0" minHeight="10.0" prefHeight="68.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="86.0" minHeight="0.0" prefHeight="16.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="185.0" minHeight="10.0" prefHeight="185.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="151.0" minHeight="10.0" prefHeight="72.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="181.0" minHeight="10.0" prefHeight="123.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="59.0" minHeight="4.0" prefHeight="19.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Rectangle fx:id="dalt_regle1" arcHeight="30.0" arcWidth="30.0" fill="#f47e28" height="74.0" stroke="BLACK" strokeType="INSIDE" width="343.0" GridPane.columnIndex="3" />
+            <Label fx:id="titreRegle" alignment="CENTER" prefHeight="17.0" prefWidth="347.0" text="Règles du Jeu :" textAlignment="CENTER" GridPane.columnIndex="3">
+               <font>
+                  <Font name="Bookman Old Style" size="24.0" />
+               </font></Label>
+            <Rectangle fx:id="dait_grosbloc" arcHeight="30.0" arcWidth="30.0" fill="#edac71" height="477.0" opacity="0.55" stroke="BLACK" strokeType="INSIDE" width="762.0" GridPane.rowIndex="1" GridPane.rowSpan="6" />
+            <Rectangle fx:id="dait_petitbloc" arcHeight="5.0" arcWidth="5.0" fill="#ffa563" height="8.0" stroke="BLACK" strokeType="INSIDE" width="478.0" GridPane.columnIndex="2" GridPane.columnSpan="4" GridPane.rowIndex="2" />
+            <Rectangle fx:id="dalt_regle2" arcHeight="15.0" arcWidth="15.0" fill="#f47e28" height="75.0" stroke="BLACK" strokeType="INSIDE" width="339.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Rectangle fx:id="dait_contact" arcHeight="45.0" arcWidth="45.0" fill="#edac71" height="111.0" opacity="0.75" stroke="BLACK" strokeType="INSIDE" width="663.0" GridPane.columnIndex="1" GridPane.columnSpan="5" GridPane.rowIndex="5" />
+            <Label fx:id="titreContacter" alignment="CENTER" prefHeight="17.0" prefWidth="363.0" text="Nous contacter :" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.columnSpan="5" GridPane.rowIndex="1">
+               <children>
+                  <Label fx:id="but1" text="But du jeu :" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Label fx:id="but2" text="- trouver un mot en devinant quelles sont les lettres qui le composent" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="but3" text="- Et eviter de faire plus d’erreur commises pour avoir perdu la partie" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.columnSpan="5" GridPane.rowIndex="3">
+               <children>
+                  <Label fx:id="comment1" text="Comment faire:" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Label fx:id="comment2" text="- Pour proposer une lettre, appuyer sur une des lettres de l’alphabet à l’aide de la souris en cliquant sur le clic gauche." textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="comment3" text="- Si la lettre devient rouge, cela veux dire que la lettre ne fait pas partie du mot et cela provoquera une faute." textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="comment4" text="- Si la lettre devient verte, alors le lettre appartient bien au mot demandé." textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="comment5" text="- En cas de problèmes techniques ou de compréhension, merci de constacter les personnes qui ont crée le jeu avec les coordonnées qui sont affiché juste en dessous." textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+               </children>
+            </VBox>
+            <GridPane maxHeight="100.0" prefHeight="132.0" prefWidth="662.0" GridPane.columnIndex="1" GridPane.columnSpan="5" GridPane.rowIndex="5">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="64.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="63.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="contact1" text="Adresse :">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Label>
+                  <Label fx:id="contact2" text="Adresse Email :" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Label>
+                  <Label fx:id="contact3" text="Numero de Téléphone:" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Label>
+                  <Label alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="337.0" text=" 22 Rue de la Paix, 00000 Paradis" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Label>
+                  <Label alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="337.0" text="dfjsbs.gushgidb@gmail.com" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Label>
+                  <Label alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="338.0" text="00-00-00-00-00" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Label>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="imageViewFond" fitHeight="580.0" fitWidth="1128.0" layoutX="-125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/accueil.jpg" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER" layoutX="112.0" prefHeight="580.0" prefWidth="555.0">
+         <children>
+            <Label fx:id="libelleTitre" alignment="CENTER" prefHeight="199.0" prefWidth="577.0" text="Jeu du Pendu" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Bookman Old Style" size="64.0" />
+               </font>
+            </Label>
+            <Pane maxWidth="367.0" prefHeight="55.0" prefWidth="537.0">
+               <children>
+                  <TextField fx:id="zoneSaisieNomJoueur" alignment="CENTER" layoutX="164.0" prefHeight="55.0" prefWidth="202.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+                  <Rectangle fx:id="recaccueil" arcHeight="5.0" arcWidth="5.0" fill="#f47e28" height="55.0" stroke="#f47e28" strokeType="INSIDE" style="-fx-background-radius: 15;" width="193.0">
+                     <effect>
+                        <DropShadow height="18.07" offsetX="6.0" radius="18.7925" width="59.1" />
+                     </effect></Rectangle>
+                  <Label fx:id="libelleSaisieNom" alignment="CENTER" layoutY="13.0" prefHeight="17.0" prefWidth="193.0" text="Saisir un nom:" textAlignment="CENTER">
+                     <font>
+                        <Font name="Bookman Old Style" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="boutonCommencer" mnemonicParsing="false" onAction="#clicCommencer" prefHeight="50.0" prefWidth="300.0" style="-fx-background-radius: 15;" text="Commencer une partie">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="25.0" top="40.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="boutonAides" mnemonicParsing="false" onAction="#clicAides" prefHeight="50.0" prefWidth="300.0" style="-fx-background-radius: 15;" text="Aides">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="boutonOptions" mnemonicParsing="false" onAction="#clicOptions" prefHeight="50.0" prefWidth="300.0" style="-fx-background-radius: 15;" text="Options">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="boutonQuitter" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#clicQuitter" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: #f20808; -fx-background-radius: 10;" text="Quitter le jeu" textAlignment="CENTER" textFill="WHITE">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font name="Bookman Old Style" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

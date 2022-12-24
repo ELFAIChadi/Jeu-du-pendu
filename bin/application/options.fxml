@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="aide" maxHeight="580.0" maxWidth="800.0" minHeight="580.0" minWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <ImageView fitHeight="595.0" fitWidth="1033.0" layoutX="-124.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../images/accueil.jpg" />
+            </image>
+        </ImageView>
+      <Rectangle fx:id="orange_dalt" arcHeight="15.0" arcWidth="15.0" fill="#ff8e1f" height="69.0" layoutX="300.0" layoutY="7.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Rectangle fx:id="orange_dalt3" arcHeight="25.0" arcWidth="25.0" fill="#ffb41f" height="405.0" layoutX="102.0" layoutY="117.0" stroke="BLACK" strokeType="INSIDE" width="275.0" />
+      <Rectangle fx:id="orange_dalt4" arcHeight="25.0" arcWidth="25.0" fill="#ffb41f" height="405.0" layoutX="422.0" layoutY="117.0" stroke="BLACK" strokeType="INSIDE" width="275.0" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Rectangle fx:id="orange_dalt1" arcHeight="15.0" arcWidth="15.0" fill="#ff8e1f" height="59.0" layoutX="144.0" layoutY="98.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Rectangle fx:id="orange_dalt2" arcHeight="15.0" arcWidth="15.0" fill="#ff8e1f" height="59.0" layoutX="456.0" layoutY="98.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Text layoutX="220.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Slider fx:id="glissiereNombreTentatives" layoutX="141.0" layoutY="289.0" max="10.0" prefHeight="16.0" prefWidth="200.0" value="4.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Slider>
+      <Text layoutX="152.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <CheckBox fx:id="caseACocherModeDaltonien" layoutX="620.0" layoutY="486.0" mnemonicParsing="false" />
+      <Label fx:id="libelleModeDaltonien" alignment="CENTER" contentDisplay="CENTER" layoutX="427.0" layoutY="483.0" prefHeight="23.0" prefWidth="184.0" text="Mode daltonien :" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="libelleLangueDuDictionnaire" layoutX="146.0" layoutY="340.0" prefHeight="23.0" prefWidth="200.0" text="Langage du dictionnaire">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="libelleLangueDuJeu" alignment="CENTER" contentDisplay="CENTER" layoutX="427.0" layoutY="167.0" prefHeight="112.0" prefWidth="103.0" text="Langue du jeu">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <ScrollPane layoutX="140.0" layoutY="382.0" prefHeight="112.0" prefWidth="200.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <RadioButton fx:id="choixDicoEN" layoutX="21.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="154.0" text="English">
+                     <graphic>
+                        <ImageView fitHeight="53.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/drapeauanglais.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </RadioButton>
+                  <RadioButton fx:id="choixDicoFR" layoutX="21.0" layoutY="59.0" mnemonicParsing="false" text="Francais">
+                     <graphic>
+                        <ImageView fitHeight="51.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/drapeaufrancais.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </RadioButton>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Label fx:id="libelleNombreDeTentatives" layoutX="161.0" layoutY="247.0" text="Nombre de tentative">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="libelleLongueurDuMot" alignment="CENTER" contentDisplay="CENTER" layoutX="145.0" layoutY="173.0" prefHeight="23.0" prefWidth="200.0" text="Longueur du mot " textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="libelleParametres" alignment="CENTER" layoutX="457.0" layoutY="98.0" prefHeight="59.0" prefWidth="200.0" text="Paramètres">
+         <font>
+            <Font size="21.0" />
+         </font></Label>
+      <Label fx:id="libelleDifficulte" alignment="CENTER" layoutX="145.0" layoutY="98.0" prefHeight="59.0" prefWidth="200.0" text="Difficulté">
+         <font>
+            <Font size="21.0" />
+         </font></Label>
+      <Label fx:id="libelleTitre" alignment="CENTER" layoutX="302.0" layoutY="5.0" prefHeight="69.0" prefWidth="200.0" text="Options :  ">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <ScrollPane layoutX="536.0" layoutY="167.0" prefHeight="112.0" prefWidth="150.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="167.0" prefWidth="129.0">
+               <children>
+                  <RadioButton fx:id="choixLangueEN" layoutX="8.0" mnemonicParsing="false" text="English">
+                     <graphic>
+                        <ImageView fitHeight="55.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/drapeauanglais.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </RadioButton>
+                  <RadioButton fx:id="choixLangueFR" layoutX="5.0" layoutY="55.0" mnemonicParsing="false" text="Francais">
+                     <graphic>
+                        <ImageView fitHeight="54.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/drapeaufrancais.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </RadioButton>
+                  <RadioButton fx:id="choixLangueIT" layoutX="7.0" layoutY="115.0" mnemonicParsing="false" text="Italien">
+                     <graphic>
+                        <ImageView fitHeight="54.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/drapeauitalien.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </RadioButton>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Slider fx:id="glissiereLongueurMots" layoutX="141.0" layoutY="216.0" prefHeight="16.0" prefWidth="200.0" />
+      <Label fx:id="libelleChoixImagePendu" layoutX="483.0" layoutY="293.0" text="Choix image pendu">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="libelleTailleDesCaracteres" layoutX="481.0" layoutY="391.0" text="Taille des caractères ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Slider fx:id="glissiereTailleCaracteres" layoutX="474.0" layoutY="438.0" prefHeight="16.0" prefWidth="112.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="47.0" layoutX="613.0" layoutY="423.0" stroke="BLACK" strokeType="INSIDE" width="49.0" />
+      <Label fx:id="previsualisationTailleCaracteres" alignment="CENTER" contentDisplay="CENTER" layoutX="612.0" layoutY="423.0" prefHeight="47.0" prefWidth="49.0" text="A" />
+    </children>
+</AnchorPane>
